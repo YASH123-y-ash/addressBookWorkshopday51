@@ -2,173 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width",initial-scale=1.0">
+        <meta name="viewport" content="width=device-width",initial-scale="1.0">
+        <link href="AddressBook.css" rel="stylesheet">
         <title>Address Book form</title>
-        <style>
-          body{
-    margin: 0;
-    height: 100%;
-}
-
-.header{
-    padding: 15px 0;
-    background-color: #ffffff;
-}
-
-.header-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 0px solid #008CFF;
-}
-
-.logo-content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid #008CFF;
-    width: 80%;
-}
-
-.logo-content-img{
-    border: solid 0px #42515f;
-}
-
-.add-text{
-    font: normal normal bold 20px/25px Montserrat;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0px;
-    color: #008CFF;
-    text-transform: capitalize;
-}
-
-.addressbook{
-    color: black;
-}
-
-*{
-     box-sizing: border-box;
-}
-
-.form-head {
-    display: flex;
-    align-items: center;
-    text-transform: capitalize;
-    opacity: 1;
-    min-height: 90px;
-    background: #008CFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-    width: 60%;
-
-}
-
-.header-text {
-    font: normal normal normal 28px/37px Roboto;
-    letter-spacing: 0px;
-    color: white;
-    margin-left: 20%;
-}
-
-.cancel-img {
-    max-width: 30px;
-    max-height: 30px;
-    cursor: pointer;
-    margin-left: 100px;
-}
-
-*{ box-sizing: border-box;}
-
-.row-content{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 18px;
-    align-items: center;
-    border: 0px solid rgb(0, 128, 49);
-    width: 60%;
-}
-
-.input-fields{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 18px;
-    align-items: center;
-    border: 0px solid green;
-    width:60%
-}
-.label{
-    min-width: 140px;
-}
-label{
-    width: 100%;
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-.label-text{
-    margin-left: 15%;
-    font-size: 16px;
-    color: #01060a;
-    opacity: 1;
-    font-family: Roboto;
-}
-
-.text{
-    font-size: 16px;
-    color: #000305;
-    opacity: 1;
-    font-family: Roboto;
-}
-.input{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-.address-input{
-    width: 100%;
-    height: 100px;
-}
-
-select {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    font: normal normal normal 16px Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    background-color: transparent;
-    margin-left: 0%;
-}
-
-.buttonParent {
-    display: flex;
-    margin-bottom: 0px;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.button {
-    font-size: 20px;
-    font-family: Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    opacity: 1;
-    background: transparent;
-    background-color: #f5f5f5;
-    border: 1px solid #707070;
-    font-weight: 400;
-    min-width: 140px;
-    padding: 7px 7px;
-    cursor: pointer;
-}
-
-.form{
-    margin-left: 25%; 
-}
-        </style>
     </head> 
     <body>
         <header class="header-content header">
@@ -181,13 +17,12 @@ select {
                 </div>
         </header>
 
-
         <div class="Form-content">
             <form class="form">
                 <div class="form-head">
                      <div class="header-text">PERSON ADDRESS FORM</div>
                      <div>
-                         <a href="D:\MYCODEJAVASCRIPT\AddressBookApp\AddressBook.Html"><img class="cancel-img" src="image\istockphoto-857112152-612x612.jpg"></a>
+                         <a href="AddressBookApp\AddressBook.Html"><img class="cancel-img" src="image\istockphoto-857112152-612x612.jpg"></a>
                      </div>
                </div>
 
@@ -213,37 +48,43 @@ select {
 
             </div>
 
-            <div class="input-fields">
+            <div class="select-input-fields">
                 <label class="label text" for="city">City
                 <select id="city" name="city">
                     <option value="">Select City</option>
-                    <option value="Patna">Purnea</option>
-                    <option value="Mokama">Gaya</option>
-                    <option value="Barh">Patna</option>
-                    <option value="Mumbai">Noida</option>
-                    <option value="Banglore">GrNoida</option>
+                    <option value="Patna">Patna</option>
+                    <option value="purnea">Purnea</option>
+                    <option value="Noida">Noida</option>
+                    <option value="GrNoida">GrNoida</option>
+                    <option value="Gaya">Gaya</option>
                 </select>
                 </label>
 
 
-                <label class="label-text" for="state">State
+                <label class="label-text-select" for="state">State
                 <select id="state" name="state">
                     <option value="">Select State</option>
                     <option value="Bihar">Bihar</option>
-                    <option value="Maharashtra">Delhi</option>
-                    <option value="Chattisgarh">Dehradun</option>
+                    <option value="Dehradun">Dehradun</option>
+                    <option value="Assam">Assam</option>
                 </select>
                 </label>
 
-                <label class="label-text" for="zip">Zip Code
+                <label class="label-text-select" for="zip">Zip Code
                 <input class="input" type="text" id="zipcode" name="zipcode" placeholder="Zip Code" required>
                 </label>
 
             </div>
 
+            <div class="buttonParent">
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Add</button>
+                    <button type="reset" class="button resetButton">Reset</button>
+                </div>
             </div>
         </form>
     </div>
-            </form>
-        </div>
-    </body>  
+    <script src="AddressBook.js"></script>
+    <script src="Contact.js"></script>
+ </body>    
+  </html>
